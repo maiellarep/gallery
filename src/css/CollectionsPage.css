@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+.photo a {
+    text-decoration: none;
+}
+.collectionName {
+    color: #3C3B3B;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}

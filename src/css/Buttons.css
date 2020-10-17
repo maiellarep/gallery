@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+.button {
+    padding: 12px 19px 12px 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #333;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Raleway", Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    outline: none;
+}
+
+.button:first-child {
+    margin-left: 0;
+}
+
+.button:hover {
+    border: 2px solid #2ebaae;
+    color: #2ebaae;
+}

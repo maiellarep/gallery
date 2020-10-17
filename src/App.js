@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import CollectionsPage from './CollectionsPage';
+import AllImgPage from './AllImgPage';
+import AddImg from './AddImg';
+import EditImg from './EditImg';
+import AddCollectionPg from './AddCollectionPg';
+import CollectionItemPg from './CollectionItemPg';
+import StorageInfo from './StorageInfo';
+import ImgPage from './ImgPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render()
+  {
+    return (
+      <div>
+        <Router>
+          <div>
+          <Switch>
+            <Route path="/" exact component={AllImgPage}/>
+            <Route path="/add" component={AddImg}/>
+            <Route path="/collections" component={CollectionsPage}/>
+            <Route path="/addcollection" component={AddCollectionPg}/>
+            <Route path="/collectionpage/:colName" component={CollectionItemPg}/>
+            <Route path="/edit/:id" component={EditImg}/>
+            <Route path="/storageinfo" component={StorageInfo}/>
+            <Route path="/imgpage/:id" component={ImgPage}/>
+          </Switch>
+          
+          </div>
+
+      </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

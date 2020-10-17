@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
+.input_1, .textarea_1 {
+    width: 90%;
+    outline: none;
+    font-family: "Raleway", Helvetica, sans-serif;
+    border: 1px solid grey;
+}
+.textarea_1 {
+    height: 200px;
+    resize: none;
+    outline: none;
+}
+.input_1 {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.select {
+    height: 35px;
+    width: 30%;
+    border: 1px solid grey;
+    padding: 5px;
+}
